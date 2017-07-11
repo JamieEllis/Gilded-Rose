@@ -5,6 +5,7 @@ using GildedRose;
 using NUnit.Framework;
 using ApprovalTests;
 using ApprovalTests.Reporters;
+using System.Collections.Generic;
 
 namespace GildedRoseTests
 {
@@ -12,6 +13,7 @@ namespace GildedRoseTests
 	[UseReporter(typeof(NUnitReporter))]
 	public class ApprovalTest
 	{
+        
 		[Test]
 		public void ThirtyDays()
 		{
@@ -23,6 +25,9 @@ namespace GildedRoseTests
 			String output = fakeoutput.ToString();
 			Approvals.Verify(output);
 		}
-	}
-	
+       
+
+        
+    }
+
 }
